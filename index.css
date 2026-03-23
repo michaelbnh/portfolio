@@ -559,15 +559,104 @@ section.contato .flex {
 }
 
 /* RESPONSIVIDADE */
+
 @media screen and (max-width: 1024px) {
-    /* ... (manter o resto igual) ... */
+    /* CABEÇALHO */
+    .menu-desktop, .btn-contato {
+        display: none;
+    }
+
+    .btn-abrir-menu {
+        display: block;
+    }
+
+    /* TOPO DO SITE */
+    section.topo-do-site .flex {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .topo-do-site .txt-topo {
+        text-align: center;
+    }
+
+    .topo-do-site .txt-topo h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* ESPECIALIDADES */
+    section.especialidades .flex {
+        gap: 20px;
+    }
+
+    /* SOBRE */
+    section.sobre .flex {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .sobre .img-sobre img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 32px;
+    }
+
+    /* PROJETOS */
+    section.projetos .flex {
+        gap: 20px;
+    }
+
+    .projetos .projeto-box {
+        height: auto;
+        min-height: 350px;
+    }
+
+    /* CONTATO */
     section.contato .flex {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
 
     .contato .contato-box {
         width: 100%;
         max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h2.titulo {
+        font-size: 30px;
+    }
+
+    .topo-do-site .txt-topo h1 {
+        font-size: 28px;
+    }
+
+    .topo-do-site .txt-topo p {
+        font-size: 16px;
+    }
+
+    .menu-mobile {
+        width: 100%;
+        padding: 100px 30px;
+    }
+
+    .menu-mobile nav ul {
+        text-align: center;
+    }
+
+    .menu-mobile nav ul li a {
+        font-size: 22px;
     }
 }
